@@ -1,4 +1,3 @@
-
 <template>
     <div id="disqus_thread"></div>
 </template>
@@ -11,7 +10,7 @@
           this.page.identifier = window.location.pathname; 
         };
         (function() {
-          let d = window.document, s = d.createElement('script');
+          let d = document, s = d.createElement('script');
           s.src = 'https://zsmoo.disqus.com/embed.js';
           s.setAttribute('data-timestamp', +new Date());
           (d.head || d.body).appendChild(s);
