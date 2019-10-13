@@ -3,7 +3,7 @@ module.exports = {
     title: 'RemoTutor',
     description: '노트를 위한',
     plugins: ['@vuepress/last-updated'],
-    base: '/<REPO>/',
+    base: '/remotutor/',
     markdown: {
         //markdown
         extendMarkdown: md => {
