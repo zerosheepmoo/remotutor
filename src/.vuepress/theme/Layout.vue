@@ -8,11 +8,11 @@
 
 <script>
     import ParentLayout from '@parent-theme/layouts/Layout.vue'
-    import Disqus from '../components/disqus.vue'
+    // import Disqus from '../components/Disqus.vue'
+    // import hh from '../components/hh.vue'
     export default {
         components: {
             ParentLayout,
-            Disqus
         }
     }
 </script>

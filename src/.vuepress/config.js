@@ -48,6 +48,18 @@ module.exports = {
                     }
                 ],
                 sidebar: {
+                    '/guide/': [{
+                        title: 'Guide',
+                        collapsable: false,
+                        children: [
+                            '',
+                            'installing',
+                            'developing',
+                            'markdown-basic',
+                            'example',
+
+                        ]
+                    }],
                     '/boxes/choi/': [
                         {
                             title: 'Choi Box',

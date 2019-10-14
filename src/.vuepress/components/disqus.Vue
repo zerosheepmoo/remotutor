@@ -4,16 +4,17 @@
 <script>
   export default {
     mounted() {
-      let disqus_config = function () {
+      var disqus_config = function () {
         this.page.url = window.location.origin;
         this.page.identifier = window.location.pathname;
       };
       (function() {
-        let d = window.document, s = d.createElement('script');
+        var d = window.document, s = d.createElement('script');
         s.src = 'https://zsmoo.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
       })();
     }
   }
+  
 </script>
