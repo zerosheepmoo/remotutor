@@ -17,11 +17,11 @@ footer: MIT Licensed | Copyright © 2019 zerosheepmoo
 <div class="features">
 
   <div class="feature">
-    <a target="_blank" href="/boxes/choi"> <h2>Choi's Box</h2> </a>
+    <a target="_blank" href="/boxes/choi/"> <h2>Choi's Box</h2> </a>
     <p>Choi's reivew note</p>
   </div>
   <div class="feature">
-    <a target="_blank" href="/boxes/chae"> <h2>Chae's Box</h2> </a>
+    <a target="_blank" href="/boxes/chae/"> <h2>Chae's Box</h2> </a>
     <p>Chae's reivew note</p>
   </div>
 </div>

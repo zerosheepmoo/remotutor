@@ -32,9 +32,13 @@ module.exports = {
                     },
                     {
                         text: 'Board',
-                        ariaLabel: 'Board Menu',
                         items: [
-                            { text: 'Zero', link: '/board/zero/' }
+                            {
+                                text: 'Zero',
+                                items: [
+                                    { text: 'Zero-java', link: '/board/zero-java/' }
+                                ]
+                            }
                         ]
                     },
                     { text: 'Github', link: 'https://github.com/zerosheepmoo/remotutor' },
@@ -80,15 +84,17 @@ module.exports = {
                             ]
                         },
                     ],
-                    '/board/zero/': [
+                    '/board/zero-java/': [
+
                         {
-                            title: 'Zero Board',
+                            title: 'Zero java Board',
                             collapsable: false,
                             children: [
                                 '',
-                                'first-board',
-                                'second-board',
-                                'third-board',
+                                'java-basic-one',
+                                'java-basic-two',
+                                'stack',
+                                'oop-patterns',
                             ]
                         }
                     ]
