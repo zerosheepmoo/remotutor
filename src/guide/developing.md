@@ -24,23 +24,30 @@ yarn build
 .
 ├── docs (builded files)
 ├── src
-│   └── .vuepress 
-│       ├── components
-│       ├── theme 
-│       └── config.js 
-├── ...페이지들
+│   ├── .vuepress 
+│   │   ├── components
+│   │   ├── theme 
+│   │   └── config.js 
+│   └──...페이지들
 └── package.json
+```
+### 시작 전에
+
+- 다음의 명령어를 실행하여 pull을 한다. (그래야 업데이트 한 정보를 받을 수 있음)
+
+```bash
+git pull origin master
 ```
 
 ### 바뀌는 부분
 
-- 기본적으로 tutor는 `board`, tutee는 `box`에 자신이 공부한 내용을 `md` 파일로 정리한다.
+- 기본적으로 tutor는 `board`, tutee는 `box`에 자신이 공부한 내용을 `md` 파일로 정리한다. 보통 `/src/boxes/[userName]/[mdFilename]`에서 작업한다.
 - 마크다운 문법에 대한 설명 및 기본 포맷은 [다음항목](./example)을 참고하자.
 - 또 `.vuepress` 디렉토리에 있는 `config.js`에 `sidebar`항목에 자기 이름이 `title`로  설정된 곳의 `children`항목에 markdown 파일의 제목을 추가해야한다. 그래야 사이드바로 접근이 가능하다.
 
 ### 저장 후 확인
 
-- 위에서 언급한 `yarn dev`를 터미널 및 쉘에서 입력 후 `localhost:8080`에서 확인한다.
+- 위에서 언급한 `yarn dev`를 터미널 및 cmd에서 입력 후 `localhost:8080`에서 확인한다.
 
 ### 빌드 및 배포
 
