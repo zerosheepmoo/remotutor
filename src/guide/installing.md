@@ -9,6 +9,12 @@
 
 [공식사이트](https://nodejs.org/ko/)에서 안정적 버전 설치.
 
+- version 확인
+
+```bash
+node --version
+```
+
 ## yarn package mananger
 
 - [homebrew](https://brew.sh/index_ko.html) 이용 (Mac)
@@ -28,6 +34,11 @@ $ npm i -g yarn
 ```bash
 yarn --version
 ```
+
+## git
+
+- 검색해서 설치하세요. [링크](https://git-scm.com/downloads)
+- mac의 경우 git 명령어 최초사용시 자동 설치.
 
 ::: warning 윈도우즈의 경우
 그 외 방법은 구글링해서 알아볼것.

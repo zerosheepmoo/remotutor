@@ -28,7 +28,7 @@ yarn build
 │       ├── components
 │       ├── theme 
 │       └── config.js 
-├── 페이지 구조...
+├── ...페이지들
 └── package.json
 ```
 

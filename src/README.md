@@ -1,8 +1,8 @@
 ---
 home: true
 heroText: RemoTutor
-tagline: 레모튜터 사이트에 오신 것을 환영합니다!
-actionText: 시작하기 →
+tagline: 레모튜터 자료 블로그
+actionText: 개발 가이드 읽기
 actionLink: /guide/
 features:
 - title: 튜터링 자료 보관소
