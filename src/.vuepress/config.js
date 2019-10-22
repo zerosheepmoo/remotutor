@@ -103,6 +103,8 @@ module.exports = {
                                 'java-basic-one',
                                 'java-basic-two',
                                 'stack',
+                                'queue',
+                                'recursion',
                                 'oop-patterns',
                             ]
                         }
