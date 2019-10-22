@@ -52,6 +52,7 @@ yarn --version
 ### git collaborator 권한
 
 tutor 에게 연락하여 협력자 권한을 추가한다.
+또는 메일로: `zerosheepmoo@gmail.com`
 
 ### cloning
 

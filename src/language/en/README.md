@@ -6,7 +6,7 @@ actionText: Development Guide
 actionLink: /guide/
 features:
 - title: Storage
-  details: You can store your material and find easily.
+  details: You can store your materials and find them easily.
 - title: Review Note
   details: Not only tutors, but also tutees can post review note.
 - title: Portfolio

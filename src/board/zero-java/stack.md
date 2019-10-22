@@ -7,7 +7,7 @@
 
 ## 스택이란?
 
-- FILO (First In Last Out) 원리를 따라 삽입/수정되는 오브젝트의 모음집.
+- FILO (First In Last Out) 원리를 따라 삽입/제거되는 오브젝트의 모음집.
 
 ## 주 연산
 
