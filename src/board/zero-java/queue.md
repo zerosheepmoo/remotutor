@@ -66,5 +66,103 @@ public interface Queue<E> {
 - Dequeue
     - 인덱스가 `f`인 element를 지움
     - `f = (f + 1) % N`
-    - `size` 감소
-- Add element to (f)
+    - `size--`
+- Enqueue
+    - `(f + size) % N` (끝 인덱스 다음)에 element 추가
+    - `size++`
+
+> Big-O 는 모든 연산 다 `O(1)`이다.
+
+## 리스트 기반 큐
+
+### singly linked list
+- `enqueue`, `dequeue`는 `O(1)`이다.
+- `capacity` 제한이 없다.
+
+### 구현 (enqueue, dequeue)
+```java
+/*
+    Node<Element>(e:Element, next: Node<Element>);
+*/
+public void enqueue(Element e) {
+    head.next = new Node<Element>(e, null);
+    head = head.next;
+    size++;
+}
+public Element dequeue() {
+    if(isEmpty()){
+        return null;
+    }
+    Element ret = first();
+    tail = tail.next;
+    tail.e = null; //detach from e to make it deallocated
+    size‐‐;
+    return ret;
+}
+public Element first() {
+    if(isEmpty()){
+        return null;
+    }
+    return tail.next.e;
+}
+/*...*/
+```
+
+## 요세퍼스 문제(조세푸스 문제)
+
+- [Josephus Problem](https://en.wikipedia.org/wiki/Josephus_problem)
+- 큐로 구현해보자
+
+### 로직
+
+- `k` 번 만큼 `dequeue`한 element를 `enqueue`한다.
+- 위 시행이 끝나면 `dequeue`한다.
+- 새로운 큐에서 반복
+
+### 구현
+
+::: warning 중요
+시험이 있다면 나오기 좋은 부분입니다.
+이런 부분은 private repository 에서 다룹니다.
+:::
+
+## 더블 엔디드 큐 (Double-Ended Queue)
+
+- 양방향으로 삽입, 제거가 가능하게 끔 한 큐다.
+
+### 연산들
+
+- `first()`, `last()`
+- `addFirst()`, `addLast()`
+- `removeFirst()`, `removeLast()`
+- `size()`, `isEmpty()`
+
+### 인터페이스
+
+```java
+public interface DEque<E>
+{
+    public int size();
+    public boolean isEmpty();
+    public E first();
+    public E last();
+    public void addFirst(E e);
+    public void addLast(E e);
+    public E removeFirst();
+    public E removeLast();
+}
+```
+
+### 구현 (어레이 기반 deque)
+
+```java
+int index(int i){
+    return (i + N) % N;
+}
+int lastIndex(){
+    index(f + size - 1);
+}
+/* 이후 각 index에 맞춰서 메소드 만들면된다. */
+// ex Element last(){ return isEmpty? null: data[lastIndex()];}
+```
+
